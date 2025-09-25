@@ -55,4 +55,12 @@ class StringcalulatorApplicationTests {
     }
 	
 
+	@Test
+    void add_multipleNegativeNumbers_listedInMessage() {
+       IllegalArgumentException ex = assertThrows(IllegalArgumentException.class,
+                    () -> calc.add("-1,-2,3,-4"));
+        assertEquals("negative numbers not allowed -1,-2,-4", ex.getMessage());
+      }
+
+
 }
