@@ -41,7 +41,8 @@ class StringcalulatorApplicationTests {
      }
 
 	@Test
-	void contextLoads() {
-	}
+    void add_customDelimiter() {
+        assertEquals(3, calc.add("//;\n1;2"));
+    }
 
 }
