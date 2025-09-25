@@ -35,6 +35,11 @@ class StringcalulatorApplicationTests {
         assertEquals(1, calc.add("1"));
      }
 
+	 @Test
+     void add_newlinesBetweenNumbers() {
+        assertEquals(6, calc.add("1\n2,3"));
+     }
+
 	@Test
 	void contextLoads() {
 	}
