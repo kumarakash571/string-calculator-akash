@@ -24,6 +24,11 @@ class StringcalulatorApplicationTests {
     void add_multipleNumbers() {
        assertEquals(15, calc.add("1,2,3,4,5"));
   }
+    
+   @Test
+    void add_twoNumbers_commaSeparated() {
+      assertEquals(6, calc.add("1,5"));
+    }
 
 	@Test
 	void contextLoads() {
